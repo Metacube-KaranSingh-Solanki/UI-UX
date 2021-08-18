@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Meta Parking</title>
+    <title>Meta Parking</title>
 </head>
+
 <body style="font-family: Calibri; margin-left: 5%; margin-right: 5%">
     <!--Header-->
     <header>
@@ -26,16 +28,16 @@
         <h2>Employee</h2>
         <form>
             <label>Full Name: <input type="text" class="input" placeholder="Full Name" required /></label><br><br>
-            <label>Gender:
-                <label><input type="radio" class="input" name="gender" required /> Male</label>
-                <label><input type="radio" class="input" name="gender" required /> Female</label><br><br>
-                <label>Email: <input type="email" class="input" placeholder="Email" required /></label> <br><br>
-                <label>Password: <input type="password" class="input" placeholder="Password" required /></label><br><br>
-                <label>Confirm Password: <input type="password" class="input" placeholder="Confirm password"
-                        required /></label> <br><br>
-                <label>Contact Number: <input type="number" class="input" placeholder="Contact"
-                        required /></label><br><br>
-                <button type="submit">Submit</button>
+            <label>Gender:</label>
+            <label><input type="radio" class="input" name="gender" required /> Male</label>
+            <label><input type="radio" class="input" name="gender" required /> Female</label><br><br>
+            <label>Email: <input type="email" class="input" placeholder="Email" required /></label> <br><br>
+            <label>Password: <input type="password" class="input" placeholder="Password" required /></label><br><br>
+            <label>Confirm Password: <input type="password" class="input" placeholder="Confirm password"
+                    required /></label> <br><br>
+            <label>Contact Number: <input type="number" class="input" placeholder="Contact" minlength="10"
+                    maxlength="10" required /></label><br><br>
+            <button type="submit">Submit</button>
         </form>
     </section>
     <hr><br>
@@ -66,20 +68,19 @@
     <section id="section-feedback">
         <h2>Feedback</h2>
         <form>
-            <form>
-                <label>Name: <input type="text" class="input" placeholder="Name" required /></label><br><br>
-                <label>Email: <input type="email" class="input" placeholder="Email" required /></label> <br><br>
-                <label>Subject: <input type="text" class="input" placeholder="Subject" required /></label><br><br>
-                <label>Message:<br>
-                    <textarea class="input" rows="4" cols="50" required>
+            <label>Name: <input type="text" class="input" placeholder="Name" required /></label><br><br>
+            <label>Email: <input type="email" class="input" placeholder="Email" required /></label> <br><br>
+            <label>Subject: <input type="text" class="input" placeholder="Subject" required /></label><br><br>
+            <label>Message:<br>
+                <textarea class="input" rows="4" cols="50" required>
                     </textarea>
-                </label><br><br>
-                <button type="submit">Submit</button>
-            </form>
+            </label><br><br>
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <hr>
     <br>
-    <!--Section #4: -->
+    <!--Section #4: Pricing-->
     <section id="section-pricing">
         <h2>Pricing</h2>
         <!--Cycle-->
