@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meta Parking Styled</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="top-nav">
+        <a class="active" href="#section-employee">ADD EMPLOYEE</a>
+        <a href="#section-add-vehicle">ADD VEHICLE</a>
+        <a href="#section-feedback">GIVE FEEDBACK</a>
+        <a href="#section-pricing">PRICING</a>
+    </nav>
+
+      <!--Banner Image-->
+    <div class="container-img">
+        <img class="img" src="images/meta-parking-banner.jpg" alt="Snow">
+        <div class="img-text">METACUBE PARKING</div>
+    </div>
+
+    <!--Section #1: Employee Form-->
+    <section id="section-employee">
+        <input id="menu-checkbox-employee" type="checkbox" class="menu-checkbox">
+        <div class="label-container">
+            <label for="menu-checkbox-employee" class="label-menu">EMPLOYEE FORM</label>
+        </div>
+        <div class="collapsible-body">
+            <img class="form-image" src="images/meta-employee.png" alt="Employee image">
+            <form id="employee-form">
+                <input class="custom-input" type="text" placeholder="Full Name" required />
+                <select id="select-gender" class="custom-input">
+                    <option value="none" selected disabled hidden>
+                        Select Gender
+                    </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <input class="custom-input" type="email" placeholder="Email" required />
+                <input class="custom-input" type="password" placeholder="Password" required />
+                <input class="custom-input" type="password" placeholder="Confirm password" required />
+                <input class="custom-input" type="number" placeholder="Contact" pattern="[0-9]{10}" required />
+                <button class="form-button" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+    
+    <!--Section #2: Add Vehicle-->
+    <section id="section-add-vehicle">
+        <input id="menu-checkbox-vehicle" type="checkbox" class="menu-checkbox">
+        <div class="label-container">
+            <label for="menu-checkbox-vehicle" class="label-menu">VEHICLE FORM</label>
+        </div>
+        <div class="collapsible-body">
+            <form id="vehicle-form">
+                <input class="custom-input" type="text" placeholder="Vehicle Make (Company)" required />
+                <input class="custom-input" type="text" placeholder="Vehicle Model" required />
+                <input class="custom-input" type="text" placeholder="Type" required />
+                <input class="custom-input" type="text" placeholder="Vehicle Number" required />
+                <input class="custom-input" type="text" placeholder="Employee Id" required />
+                <textarea class="custom-input" placeholder="Identification (Color, Mark, Visible Accessory etc.):"
+                    required></textarea>
+                <button class="form-button" type="submit">SUBMIT</button>
+            </form>
+            <img class="form-image" src="images/meta-vehicle.png" alt="Vehicle image">
+        </div>
+    </section>
+    <!--Section #3: Feedback-->
+    <section id="section-feedback">
+        <input id="menu-checkbox-feedback" type="checkbox" class="menu-checkbox">
+        </div>
+        <div class="label-container">
+            <label for="menu-checkbox-feedback" class="label-menu">FEEDBACK FORM</label>
+        </div>
+        <div class="feedback-flex collapsible-body">
+            <img class="form-image" src="images/meta-feedback-image.png" alt="Feedback image">
+            <form id="feedback-form">
+                <input class="custom-input" type="text" placeholder="Name" required />
+                <input class="custom-input" type="email" placeholder="Email" required />
+                <input class="custom-input" type="text" placeholder="Subject" required />
+                <textarea class="custom-input" placeholder="Write the description" required></textarea>
+                <button class="form-button" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <!--Section #4: Pricing-->
+    <section id="section-pricing">
+        <input id="menu-checkbox-pricing" type="checkbox" class="menu-checkbox">
+        <div class="label-container">
+            <label for="menu-checkbox-pricing" class="label-menu">PRICING</label>
+        </div>
+        <div class="collapsible-body flex-body">
+            <!--Cycle-->
+            <div class="vehicle-type">
+                <h3>CYCLE</h3>
+                <div class="circle center-flex">
+                    <label class="label-month-price">$100</label>
+                    <label>/month</label>
+                </div>
+                <div class="labels-price center-flex">
+                    <label>$5 Daily</label>
+                    <label>$100 Monthly</label>
+                    <label>$500 Yearly</label>
+                </div>
+                <button type="submit">PURCHASE NOW</button>
+            </div>
+
+            <!--Motor Cycle-->
+            <div class="vehicle-type">
+                <h3>MOTOR CYCLE</h3>
+                <div class="circle center-flex">
+                    <label class="label-month-price">$200</label>
+                    <label>/month</label>
+                </div>
+                <div class="labels-price center-flex">
+                    <label>$10 Daily</label>
+                    <label>$200 Monthly</label>
+                    <label>$1000 Yearly</label>
+                </div>
+                <button type="submit">PURCHASE NOW</button>
+            </div>
+
+            <!--Four Wheeler-->
+            <div class="vehicle-type">
+                <h3>FOUR WHEELER</h3>
+                <div class="circle center-flex">
+                    <label class="label-month-price">$500</label>
+                    <label>/month</label>
+                </div>
+                <div class="labels-price center-flex">
+                    <label>$20 Daily</label>
+                    <label>$500 Monthly</label>
+                    <label>$3500 Yearly</label>
+                </div>
+                <button type="submit">PURCHASE NOW</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        www.metaparking.com &copy2021
+    </footer>
+</body>
+</html>

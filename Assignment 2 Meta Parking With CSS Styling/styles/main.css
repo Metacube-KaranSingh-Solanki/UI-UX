@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: rgba(6, 105, 122, 0.993);
+  --primary-dark-shade: rgba(2, 50, 58, 0.993);
+  --smoke-white: #ccc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px 3% 0px 3%;
+  font-family: "Lato";
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.top-nav {
+  width: 100%;
+  height: auto;
+  background-color: var(--primary-color);
+  color: white;
+  display: inline-block;
+}
+
+.top-nav a {
+  letter-spacing: 0.5px;
+  color: white;
+  padding: 14px 20px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.top-nav a:hover,
+.label-container:hover .label-menu:hover {
+  background-color: var(--primary-dark-shade);
+}
+
+/* Primary state before hover */
+.menu-checkbox:checked,
+.label-menu {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* After checking state: Effect on label */
+.menu-checkbox:checked + .label-container > .label-menu {
+  background-color: white;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-dark-shade);
+}
+
+/* After checking state: effect on collapsible body */
+.menu-checkbox:checked + .label-container + .collapsible-body {
+  max-height: 100%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.img {
+  width: 100%;
+}
+
+.img-text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 4vw;
+  padding-top: 5%;
+  color: var(--smoke-white);
+  letter-spacing: 1px;
+}
+
+.container-img {
+  display: flex;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.label-container {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.label-menu {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 14px 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.collapsible-body {
+  max-height: 0px;
+  overflow: hidden;
+  margin-bottom: 1px;
+  align-content: center;
+}
+
+.vehicle-type {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 270px;
+  height: 250px;
+  border: 2px solid rgb(175, 163, 163);
+  border-radius: 3%;
+  text-align: center;
+  align-items: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.flex-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.center-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-image {
+  width: 28vw;
+  height: auto;
+  padding: 2%;
+}
+
+.feedback-image-div {
+  max-width: fit-content;
+}
+
+.labels-price {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: small;
+}
+
+.label-month-price {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 40%;
+}
+
+button {
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-width: 1px;
+  border-radius: 17px;
+  margin: 10px 10px;
+  align-self: center;
+  font-family: "Lato";
+}
+
+button:hover {
+  background-color: var(--primary-dark-shade);
+  cursor: pointer;
+  color: white;
+}
+
+.form-button {
+  padding: 10px;
+  width: 50%;
+}
+
+.custom-input,
+textarea {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid var(--smoke-white);
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px 10px;
+  font-family: "Lato";
+  color: rgb(82, 78, 78);
+}
+
+.custom-input:hover {
+  background-color: rgba(148, 148, 148, 0.137);
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+footer {
+  padding: 1% 1%;
+  margin-top: 3%;
+  width: 100%;
+  background-color: var(--primary-dark-shade);
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
